@@ -1,0 +1,54 @@
+.nature {
+	width: 1365px;
+	height: 652px;
+	position: relative;
+}
+.hunter {
+	width: 300px;
+	height: 300px;
+	top: 350px;
+	left: 100px;
+	position: absolute;
+	transform: rotate(-20deg);
+}
+.bullet {
+	width: 20px;
+	height: 100px;
+	top: 285px;
+	left: 360px;
+	transform: rotate(45deg);
+	position: absolute;
+	animation: bullet 5s infinite;
+}
+@keyframes bullet {
+	from{top: 285px; left: 360px;}
+	to{top: 60px; left: 600px;}
+}
+.duck {
+	width: 130px;
+	height: 250px;
+	top: -80px;
+	left: 0;
+	position: absolute;
+	animation: duck 6s infinite ;
+}
+.duck2 {
+	width: 130px;
+	height: 250px;
+	top: -50px;
+	left: 0;
+	position: absolute;
+	animation: duck1 5s infinite ;
+}
+@keyframes duck {
+	from{top: -80px; left: 0px;}
+	to{top: -80px; left: 1200px;}
+}
+@keyframes duck1 {
+	0%{top: -50px; left: 0px;}
+	20%{top: -50px; left: 150px;}
+	40%{top: -50px; left: 300px;}
+	60%{top: -50px; left: 450px;}
+	80%{top: -50px; left: 600px;}
+	100%{top: 300px; left: 600px;}
+}
